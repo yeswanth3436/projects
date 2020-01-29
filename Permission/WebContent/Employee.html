@@ -1,0 +1,148 @@
+<html>
+
+<style>
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav h1
+{
+background-color: Skyblue;
+text-align:center;
+color: red;
+padding: 10px;
+}
+
+body
+{
+	background: url("Employee.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+  	background-size: cover;
+  	color: white;
+	overflow: auto;
+	margin: 0;
+    	padding: 0;
+}
+
+.nav-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 61%;
+    left: 25%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.nav-box p{
+	margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.reg-box{
+    width: 320px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 60%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.reg-box p{
+	margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.reg-box input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.reg-box input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.reg-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+</style>
+<body>
+
+<div class="topnav">
+<h1>KL University</h1>
+	<a href="Developers.html">Developers</a>
+	<a style="float:right;" href="#">Logout</a>
+	
+</div>
+
+<div class="nav-box">
+
+<p>
+    Employee id : 
+    <br><br>
+    Leader id : L123
+</p>
+
+</div>
+
+ 
+<form action ="./Request" method = "post" >
+
+<div class="reg-box">
+	
+<p>
+Id<br><input type="text" name="id"><br><br>
+Name<br><input type="text" name="tname"><br><br>
+Reason For applying Leave<br><input type="text" name="event"><br><br></p><br>
+<p style="float: right;"><input type="submit" name="request" value="Request"></p>
+
+</div> 
+ 
+</form>
+</html>

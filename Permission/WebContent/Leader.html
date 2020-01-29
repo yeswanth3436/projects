@@ -1,0 +1,238 @@
+<html>
+
+<style>
+.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  top: 0;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.topnav h1
+{
+background-color: Skyblue;
+text-align:center;
+color: red;
+padding: 10px;
+}
+
+body
+{
+	background: url("Leader.jpg");
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+  	background-size: cover;
+  	color: white;
+	overflow: auto;
+	margin: 0;
+    	padding: 0;
+}
+
+.nav-box{
+    width: 500px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 45%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.nav-box p{
+	margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.nav-box input[type="submit"]
+{
+    float:right;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.nav-box input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+
+.nav-box .content
+{
+    top: 76%;
+    left: 20%;
+    position: absolute; 
+}
+
+.Abox input[type="submit"]
+{
+    float:right;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Abox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+.Abox p{
+	margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.Abox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+.Abox
+{
+ 	width: 500px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 85%;
+    left: 20%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+
+.Rbox input[type="submit"]
+{
+    float:right;
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.Rbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+.Rbox p{
+	margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+.Rbox input[type="text"],input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 50px;
+    color: #fff;
+    font-size: 16px;
+}
+.Rbox
+{
+ 	width: 500px;
+    height: 150px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    top: 85%;
+    left: 70%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+</style>
+<body>
+
+<div class="topnav">
+<h1>KL University</h1>
+	<a href="Developers.html">Developers</a>
+	<a style="float:right;" href="#">Logout</a>
+	<a href="#">Founders</a>
+	
+</div>
+
+<div class="nav-box">
+  <p>Welcome Leader<br><br><br> Leader ID: L123 <br><br>Manager ID : M009</p>
+  
+  <div class="content">
+  
+  <form action="./prequests" >
+  <input type="submit" name="vr" value="View Requests">
+  </form>
+  </div>
+  <br>
+  <form action="./frequests" >
+  <input type="submit" name="fr" value="Farword Requests">
+  </form>
+  
+   
+
+</div> 
+
+
+<form action="./">
+
+<div class="Abox">
+	<p>Enter the ID number to be Accepted</p>
+	<input type="text" name="Aid"><br>
+	<input type="submit" name="Ar" value="Accept Request">
+</div>
+</form>
+
+<form action="./">
+
+<div class="Rbox">
+	<p>Enter the ID number to be Rejected</p>
+	<input type="text" name="Rid"><br>
+	<input type="submit" name="Rr" value="Reject Request">
+</div>
+</form>
+
+
+</body>
+
+</html>
